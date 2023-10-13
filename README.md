@@ -1,5 +1,5 @@
 # paping-update
-The paping program bot now comaptible and working with lasted OS and written in Golang
+The paping program that is now comaptible and working with latest OS and written in Golang
 
 Install :
   - Windows (x86_64): https://github.com/Inplex-sys/paping-update/releases/download/binaries/paping.exe
