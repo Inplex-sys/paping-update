@@ -1,4 +1,4 @@
-module paping
+module paping-go
 
 go 1.19
 
