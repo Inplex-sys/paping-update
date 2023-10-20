@@ -26,13 +26,11 @@ func ping(host string, port int, stats *ConnectionStats) {
 
 	conn, err := net.DialTimeout("tcp", fmt.Sprintf("%s:%d", host, port), time.Second*5)
 	if err != nil {
-		fmt.Printf("Connection failed: %v\n", err)
+		fmt.Printf(color.RedString("Connection timed out\n"))
 		stats.Failed++
 	} else {
 		defer conn.Close()
 		duration := time.Since(startTime)
-		// fmt.Printf("Connected to %s: time=%.2fms protocol=TCP port=%d\n", host, float64(duration.Microseconds())/1000, port)
-		// colors
 		fmt.Printf(
 			"Connected to "+color.GreenString("%s")+
 				": time="+color.GreenString("%.2fms")+
