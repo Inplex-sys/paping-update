@@ -8,7 +8,6 @@ import (
 	"strconv"
 	"syscall"
 	"time"
-
 	"github.com/fatih/color"
 )
 
